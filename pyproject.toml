@@ -1,0 +1,8 @@
+[build-system]
+build-backend = "mesonpy"
+requires = ["meson-python","cython"]
+
+[project]
+name = "atom"
+version = "0.0.1"
+requires-python = ">=3.10"

@@ -1,0 +1,45 @@
+###Create a new true empty conda environment
+# conda create --name myNewEnv --no-default-packages
+###Update environment with the following package
+# mamba activate myNewEnv
+# mamba env update -f environment.yaml
+
+###If later want to nuke the whole environment
+# mamba activate otherEnvironment
+# mamba env remove -n myNewEnv
+
+# - libcantera-devel=3.0.0
+#   - python=3.11.0
+#   - boost-cpp=1.85.0
+#   - sundials=6.6.1
+#   - fmt
+#   - tbb
+#   - tbb-devel
+#   - eigen=3.4.0
+#   - cython=3.0.0
+#   - numpy=1.25.2
+#   - pip
+#   - wheel
+#   - matplotlib
+#   - gtest
+#   - h5py=3.11.0
+#   - hdf5=1.14.3
+#   - meson=1.10.0
+#   - openblas = 0.3.31
+#   - liblapacke = 3.11.0
+#   - pip:
+#     - build==1.3.0
+
+channels:
+  - conda-forge
+dependencies:
+  - cxx-compiler
+  - pkg-config
+  - libcantera-devel=3.0.0
+  - cantera=3.0.0
+  - cython
+  - meson
+  - meson-python
+  - ninja
+  - pip
+  
